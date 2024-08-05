@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Buttons</title>
+    <style>
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            text-decoration: none; /* Remove underline from link */
+            display: inline-block; /* Needed to make the padding and background color work correctly */
+            text-align: center; /* Center the text within the button */
+            box-shadow: 0 4px #003366;
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #005b99, #0073e6);
+        }
+
+        .button:hover {
+            box-shadow: 0 2px #003366;
+            transform: translateY(2px);
+        }
+
+        .button:active {
+            box-shadow: 0 0 #003366;
+            transform: translateY(4px);
+        }
+
+        .button-red {
+            background: linear-gradient(145deg, #cc0000, #ff3333);
+            box-shadow: 0 4px #990000;
+        }
+
+        .button-red:hover {
+            box-shadow: 0 2px #990000;
+            transform: translateY(2px);
+        }
+
+        .button-red:active {
+            box-shadow: 0 0 #990000;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="https://sankar1.onrender.com/" class="button">Program Code</a>
+        <a href="https://siva-6qf5.onrender.com/" class="button">Question</a>
+        <a href="https://sankar-3n41.onrender.com/" class="button button-red">Results</a>
+    </div>
+</body>
+</html>
